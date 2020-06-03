@@ -19,6 +19,13 @@ wb=openpyxl.load_workbook('/home/hasnat/Desktop/automate_boring_stuff/Chapter 12
 # print('Cell '+c.coordinate + ' is '+c.value )
 # print(sheet['C1'].value)
 
-sheet=wb["Sheet1"]
-print(sheet.cell(row=1,column=2))
+# sheet=wb["Sheet1"]
+# print(sheet.cell(row=1,column=2))
 
+# print(sheet.cell(1,2).value )
+# for i in range(1,8,2):
+#     print(i, sheet.cell(row=i,column=2).value)
+
+sheet=wb['Sheet1']
+print(sheet.max_row)
+print(sheet.max_column)
